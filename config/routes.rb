@@ -3,7 +3,7 @@ Rails.application.routes.draw do
     resources :messages 
   end
   root 'pages#home'
-  devise_for :users, controllers: {
+  #devise_for :users, controllers: {
     sessions: 'users/sessions',
     registrations: 'users/registrations'
   }
